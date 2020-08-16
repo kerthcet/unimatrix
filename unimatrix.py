@@ -222,26 +222,46 @@ if args.help:
     exit()
 
 char_set = {
-    'a': 'qwertyuiopasdfghjklzxcvbnm',
-    'A': 'QWERTYUIOPASDFGHJKLZXCVBNM',
-    'c': 'абвгдежзиклмнопрстуфхцчшщъыьэюя',
-    'C': 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ',
-    'e': '☺☻✌♡♥❤⚘❀❃❁✼☀✌♫♪☃❄❅❆☕☂★',
-    'g': 'αβγδεζηθικλμνξοπρστυφχψως',
-    'G': 'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ',
-    'k': 'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ',
-    'm': 'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ1234567890'
+    'a':
+    'qwertyuiopasdfghjklzxcvbnm',
+    'A':
+    'QWERTYUIOPASDFGHJKLZXCVBNM',
+    'c':
+    'абвгдежзиклмнопрстуфхцчшщъыьэюя',
+    'C':
+    'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ',
+    'e':
+    '☺☻✌♡♥❤⚘❀❃❁✼☀✌♫♪☃❄❅❆☕☂★',
+    'g':
+    'αβγδεζηθικλμνξοπρστυφχψως',
+    'G':
+    'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ',
+    'k':
+    'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ',
+    'm':
+    'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ1234567890'
     '1234567890-=*_+|:<>"-=*_+|:<>"-=*_+|:<>"-=*_+|:<>"',
-    'n': '1234567890',
-    'o': 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890'
+    'n':
+    '1234567890',
+    'o':
+    'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890'
     '`-=~!@#$%^&*()_+[]{}|\;\':",./<>?"',
-    'p': '',
-    'P': '',
-    'r': 'mcclllxxxxvvvvviiiiii',
-    'R': 'MCCLLLXXXXVVVVVIIIIII',
-    's': '-=*_+|:<>"',
-    'S': '`-=~!@#$%^&*()_+[]{}|\;\':",./<>?"',
-    'u': args.custom_characters
+    'p':
+    '',
+    'P':
+    '',
+    'r':
+    'mcclllxxxxvvvvviiiiii',
+    'R':
+    'MCCLLLXXXXVVVVVIIIIII',
+    's':
+    '-=*_+|:<>"',
+    'S':
+    '`-=~!@#$%^&*()_+[]{}|\;\':",./<>?"',
+    'u':
+    args.custom_characters,
+    'all':
+    '`-=~!@#$%^&*()_+[]{}|\;\':",./<>?"qwertyuiopasdfghjklzxcvbnmｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ1234567890'
 }
 
 colors_str = {
@@ -284,7 +304,7 @@ elif args.custom_characters:
 
 # Neither "-l" nor "-u" has been set, use default characters
 else:
-    chars = char_set['m']
+    chars = char_set['all']
 
 if args.no_bold:
     args.all_bold = False
