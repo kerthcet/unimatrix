@@ -30,7 +30,7 @@ import time
 from random import choice, randint
 
 member = ''
-members = ['高彦强', '李慧玲', '黄忠雨', '王景超', '李鑫', '马文涛', '余亚娟', '李俊彦', '张霄汉']
+members = ['张三', '李四', '王五']
 
 help_msg = '''
 USAGE
